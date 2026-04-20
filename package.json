@@ -1,0 +1,25 @@
+{
+  "name": "poc-projects",
+  "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "packageManager": "yarn@4.9.1",
+  "workspaces": [
+    "projects/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "vp run --filter \"@poc/*\" build",
+    "check": "vp run --filter \"@poc/*\" check",
+    "test": "vp run --filter \"@poc/*\" test",
+    "dev:sample-web": "vp run @poc/sample-web#dev",
+    "preview:sample-web": "vp run @poc/sample-web#preview",
+    "task:build-all": "vp run build:all",
+    "task:check-all": "vp run check:all",
+    "task:test-all": "vp run test:all"
+  },
+  "devDependencies": {
+    "vite-plus": "0.1.18"
+  }
+}
