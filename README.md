@@ -39,6 +39,9 @@ corepack yarn dev:sample-web
 - `@poc/pocpm`: exact npm version과 `workspace:*`를 설치하는 학습용 최소 패키지 매니저
 
 중요한 맥락은 [docs/pocpm-reader-guide.md](docs/pocpm-reader-guide.md)에 정리해두었습니다.
+CS 베이스가 없는 프론트엔드 개발자 기준의 구현 중심 쉬운 가이드는 [docs/pocpm-study-curriculum-beginner.md](docs/pocpm-study-curriculum-beginner.md)에서 볼 수 있습니다.
+조금 더 개념 중심인 주차별 가이드는 [docs/pocpm-study-curriculum.md](docs/pocpm-study-curriculum.md)에서 볼 수 있습니다.
+프로덕션 레벨 교재 설계를 위한 문서는 [docs/book/BOOK_PRD.md](docs/book/BOOK_PRD.md), [docs/book/TOC.md](docs/book/TOC.md), [docs/book/CHAPTER_TEMPLATE.md](docs/book/CHAPTER_TEMPLATE.md)에 모아뒀습니다.
 
 ## 규약
 
@@ -69,4 +72,4 @@ node /path/to/pocpm/dist/cli.js install
 node /path/to/pocpm/dist/cli.js run greet
 ```
 
-처음 읽을 때는 [docs/pocpm-reader-guide.md](docs/pocpm-reader-guide.md)부터 보는 편이 빠릅니다.
+처음 읽을 때는 [docs/pocpm-reader-guide.md](docs/pocpm-reader-guide.md)부터 보고, 이어서 [docs/pocpm-study-curriculum-beginner.md](docs/pocpm-study-curriculum-beginner.md)로 넘어가는 편이 빠릅니다.
