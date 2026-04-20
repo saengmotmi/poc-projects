@@ -1,0 +1,39 @@
+{
+  "name": "@poc/book-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "check": "tsc --noEmit",
+    "start": "next start",
+    "test": "node --eval \"console.log('No tests yet for @poc/book-web')\"",
+    "lint": "eslint .",
+    "postinstall": "fumadocs-mdx",
+    "vercel:link": "vercel link",
+    "vercel:pull": "vercel env pull .env.local",
+    "deploy:preview": "vercel deploy",
+    "deploy:prod": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "codehike": "1.1.0",
+    "fumadocs-core": "16.8.1",
+    "fumadocs-mdx": "14.3.1",
+    "fumadocs-ui": "16.8.1",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/mdx": "2.0.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vercel": "51.8.0"
+  }
+}

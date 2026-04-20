@@ -35,6 +35,7 @@ corepack yarn dev:sample-web
 
 ## 현재 포함된 프로젝트
 
+- `@poc/book-web`: Fumadocs + Code Hike 기반의 책 프론트엔드 준비 앱
 - `@poc/sample-web`: Vite+로 `dev/build/check/test`를 검증할 수 있는 기본 웹 POC
 - `@poc/pocpm`: exact npm version과 `workspace:*`를 설치하는 학습용 최소 패키지 매니저
 
