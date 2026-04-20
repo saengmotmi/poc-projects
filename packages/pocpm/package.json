@@ -1,0 +1,21 @@
+{
+  "name": "@poc/pocpm",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "bin": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test src/pocpm.test.ts"
+  },
+  "dependencies": {
+    "@poc/tsconfig": "workspace:*",
+    "tar": "^7.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
