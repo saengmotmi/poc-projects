@@ -9,14 +9,14 @@
 - 핵심 질문: `npm install dayjs` 뒤에 디스크에는 정확히 무엇이 생길까?
 - 스토리: 패키지 매니저를 매일 쓰지만, 결과물을 제대로 본 적이 없는 프론트엔드 개발자
 - 핵심 개념: `package.json`, `package-lock.json`, `node_modules`
-- 산출물: 설치 결과를 읽는 inspection script
-- 검증: lockfile과 installed package 정보를 스크립트로 출력할 수 있다
+- 산출물: `import "dayjs"`의 도착 경로를 추적하는 tracing script
+- 검증: 패키지 이름 import가 `node_modules` 안의 실제 파일로 이어짐을 출력으로 확인할 수 있다
 
 ### Chapter 2. 설치는 왜 tarball을 중심으로 돌아갈까
 
 - 핵심 질문: 패키지는 어떻게 registry에서 내 디스크로 오나?
 - 스토리: lockfile의 `resolved` URL을 보고 직접 파일을 받아보는 실험
-- 핵심 개념: registry metadata, tarball, integrity
+- 핵심 개념: `resolved` URL, tarball, integrity
 - 산출물: tarball 다운로드 + 압축 해제 스크립트
 - 검증: unpacked 폴더와 installed package 폴더를 비교할 수 있다
 
@@ -25,8 +25,8 @@
 - 핵심 질문: `package.json`만 있으면 안 되나?
 - 스토리: 어제와 오늘 설치 결과가 달라질 수 있는 팀 프로젝트
 - 핵심 개념: range, exact version, 재현 가능성
-- 산출물: lockfile 필드 해설 메모
-- 검증: 특정 패키지의 version/resolved/integrity를 lockfile에서 설명할 수 있다
+- 산출물: manifest와 lockfile 비교 스크립트
+- 검증: `package.json`의 범위와 lockfile의 정확한 설치 결과를 나란히 설명할 수 있다
 
 ## Part 2. 최소 설치기 만들기
 
