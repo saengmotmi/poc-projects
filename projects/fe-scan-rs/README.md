@@ -94,6 +94,11 @@ fe-scan unused-deps
 
 학습 세션은 [`learning-log/TEMPLATE.md`](./learning-log/TEMPLATE.md)를 복사해서 남깁니다.
 
+현재 로그:
+
+- [2026-07-05 week 0: Rust FE tooling 트랙 시작](./learning-log/2026-07-05-week-0.md)
+- [2026-07-05 day 1: ownership/borrow 첫 감각](./learning-log/2026-07-05-day-1-ownership-borrowing.md)
+
 각 로그는 아래 네 가지를 반드시 포함합니다.
 
 1. 오늘의 정상 동작과 현재 동작
