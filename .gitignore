@@ -23,6 +23,8 @@ dist
 dist-ssr
 coverage
 .vite
+.tmp
+artifacts
 *.tsbuildinfo
 
 # Local-only environment files

@@ -15,6 +15,7 @@
     "test": "vp run --filter \"@poc/*\" test",
     "dev:book-web": "vp run @poc/book-web#dev",
     "dev:sample-web": "vp run @poc/sample-web#dev",
+    "modern-screenshot": "node scripts/modern-screenshot.mjs",
     "start:book-web": "vp run @poc/book-web#start",
     "preview:sample-web": "vp run @poc/sample-web#preview",
     "task:build-all": "vp run build:all",
